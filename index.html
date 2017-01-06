@@ -24,7 +24,7 @@
     <script src="assets/js/modernizr.js"></script>
   </head>
 
-  <body>
+  <body onload="fadeDivs()">
 	
 	<div id="headerwrap">
 	    <div class="container">
@@ -41,17 +41,17 @@
 	 <div id="service">
 	 	<div class="container">
  			<div class="row centered">
- 				<div class="col-md-4">
+ 				<div id="fadeDiv1" class="col-md-4">
  					<i class="fa fa-code"></i>
  					<h4>Web</h4>
- 					<p>I've been building sites for many years. I have loads of experience in HTML, CSS and a bit in Javascript.</p>
+ 					<p>I've been building sites for many years. I have loads of experience in both the front-end and back-end (HTML, CSS, PHP) and a bit in Javascript.</p>
  				</div>
- 				<div class="col-md-4">
+ 				<div id="fadeDiv2" class="col-md-4">
  					<i class="fa fa-windows"></i>
  					<h4>Software</h4>
  					<p>I'm pretty well known with software development using the .NET Framework, C# specifically.</p>
  				</div>
- 				<div class="col-md-4">
+ 				<div id="fadeDiv3" class="col-md-4">
  					<i class="fa fa-rocket"></i>
  					<h4>UI/UX</h4>
  					<p>User interface & User Experience are both extremely important to me. I really like making my projects both good looking, and easy to use.</p>
@@ -132,6 +132,18 @@
 		 	</div>
 	 	</div>
 	 </div>
+
+	<script>
+	function fadeDivs() {
+    	$('#fadeDiv1').hide();
+    	$('#fadeDiv2').hide();
+    	$('#fadeDiv3').hide();
+
+		$('#fadeDiv1').delay(0).fadeIn(700);
+		$('#fadeDiv2').delay(500).fadeIn(500);
+		$('#fadeDiv3').delay(1000).fadeIn(500);
+	}
+	</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
