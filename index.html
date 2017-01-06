@@ -10,16 +10,10 @@
 
     <title>SPETS</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,13 +33,11 @@
 					<h1 style="padding-bottom:10px;"><span id="bracket">{</span> <span id="bracketText">Hi, I'm SPETS!</span> <span id="bracket">}</span></h1>
 					<h3>Welcome to my website, here you can keep up with my latest work!</h3><br>
 				</div>
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /headerwrap -->
+			</div>
+	    </div>
+	</div>
 
-	<!-- *****************************************************************************************************************
-	 SERVICE LOGOS
-	 ***************************************************************************************************************** -->
+
 	 <div id="service">
 	 	<div class="container">
  			<div class="row centered">
@@ -68,9 +60,8 @@
 	 	</div><! --/container -->
 	 </div><! --/service -->
 	 <hr>
-	<!-- *****************************************************************************************************************
-	 PORTFOLIO SECTION
-	 ***************************************************************************************************************** -->
+
+
 	 <div id="portfoliowrap">
         <h3>LATEST PROJECTS</h3>
 
@@ -88,7 +79,7 @@
 	        </div>
         </a>
 
-        <a target="_blank" href="#">
+        <a href="index.sf.html">
 	        <div style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('assets/img/sf.jpg') !important;" class="lwitem col-md-3">
 	        	<h2><i class="fa fa-windows fa-fw"></i> SmoothFader</h2>
 	        	<h5><b>SmoothFader is a lightweight application to easily fade the system volume in and out.<br><br>Notice: SmoothFader is still WIP and by no means completed.</b></h5>
@@ -114,9 +105,9 @@
      </div>
 	 
 	 <div style="margin-top:-17px;margin-bottom:-17px;">&nbsp;</div>
-	<!-- *****************************************************************************************************************
-	 FOOTER
-	 ***************************************************************************************************************** -->
+
+
+
 	 <div id="footerwrap">
 	 	<div class="container">
 		 	<div class="row">
@@ -130,19 +121,18 @@
 		 			<h4>Get in touch</h4>
 		 			<div class="hline-w"></div>
 		 			<p>
-		 				 <a id="whitelink" href="mailto:mail@spets.me"><i style="font-size:16px;" class="fa fa-envelope-o fa-fw"></i> MAIL@SPETS.ME</a> 
+		 				 <a target="_blank" id="whitelink" href="mailto:mail@spets.me"><i style="font-size:16px;" class="fa fa-envelope-o fa-fw"></i> MAIL@SPETS.ME</a> 
 		 				 <br>
-		 				 <a id="whitelink" href="https://www.twitter.com/SPETS1337"><i style="font-size:16px;" class="fa fa-twitter fa-fw"></i> @SPETS1337</a> 
+		 				 <a target="_blank" id="whitelink" href="https://www.twitter.com/SPETS1337"><i style="font-size:16px;" class="fa fa-twitter fa-fw"></i> @SPETS1337</a> 
+		 				 <br>
+		 				 <a target="_blank" id="whitelink" href="https://github.com/SPETS1337/"><i style="font-size:16px;" class="fa fa-github fa-fw"></i> @SPETS1337</a> 
 		 			</p>
 		 		</div>
 		 	
-		 	</div><! --/row -->
-	 	</div><! --/container -->
-	 </div><! --/footerwrap -->
-	 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+		 	</div>
+	 	</div>
+	 </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/retina-1.1.0.js"></script>
@@ -152,88 +142,5 @@
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
 
-
-    <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
-	});
-})(jQuery);
-</script>
   </body>
 </html>

@@ -39,8 +39,33 @@ h1, h2, h3, h4, h5, h6 {
 	color:#fff !important;
 }
 
+#white{
+	color:#fff;
+}
+
+#greentag{
+	background-color:#33BA2F;
+	color:#fff;
+	padding:3px 6px 3px 6px;
+}
+
 .lowtext{
-	padding-top:80px;
+	padding-top:105px;
+}
+
+.fixedGB{
+	padding-top:30px;
+	text-align:right;
+}
+
+#ngb:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+
+.dlbtn{
+	width:100%;
+	padding:9px 0px 9px 0px;
 }
 
 #bracket{
@@ -57,6 +82,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-size:32px;
 	letter-spacing:2px;
 	padding:0px 15px 15px 15px;
+}
+
+#bhimg{
+	width:42px;
+	height:42px;
+	margin-right:10px;
 }
 
 p { 
@@ -429,7 +460,6 @@ a:focus {
 
 #blue {
 	background: #00b3fe;
-	margin-top: 60px;
 	margin-bottom: 60px;
 	padding-top: 25px;
 	padding-bottom: 25px;
