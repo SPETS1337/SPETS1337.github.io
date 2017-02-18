@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hi, welcome to my homepage! Here you can keep up with my latest work.">
+    <meta name="description" content="I'm a full-stack developer from the Netherlands.">
     <meta name="author" content="SPETS">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
     <title>SPETS</title>
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://use.fontawesome.com/49db166451.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,128 +22,185 @@
     
   </head>
 
-  <body onload="fadeDivs()">
+  <body onload="fader()">
 	
 	<div id="headerwrap">
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<h1 style="padding-bottom:10px;"><span id="bracket">{</span> <span id="bracketText">Hi, I'm SPETS!</span> <span id="bracket">}</span></h1>
+					
+					<img src="assets/img/logo.svg" class="brand_logo" draggable="false">
+					<br>
 					<a id="dhl" target="_blank" href="https://github.com/SPETS1337/"><i class="fa fa-github fa-fw fa-2x"></i></a>
 					<a id="dhl" target="_blank" href="https://twitter.com/SPETS1337"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
 					<a id="dhl" target="_blank" href="https://www.behance.net/SPETS_"><i class="fa fa-behance fa-fw fa-2x"></i></a>
-					<h3 id="sub">Welcome to my website, here you can keep up with my latest work!</h3><br>
+					<h3 id="sub">I'm a full-stack developer from the Netherlands.</h3><br>
+
 				</div>
 			</div>
 	    </div>
 	</div>
-
+	<div class="page">
 
 	 <div id="service">
 	 	<div class="container">
- 			<div class="row centered">
- 				<div id="fadeDiv1" class="col-md-4">
- 					<i class="fa fa-code"></i>
- 					<h4>Web</h4>
- 					<p>I've been building sites for many years. I have loads of experience in both the front-end and back-end (HTML, CSS, PHP) and a bit in Javascript.</p>
- 				</div>
- 				<div id="fadeDiv2" class="col-md-4">
- 					<i class="fa fa-windows"></i>
- 					<h4>Software</h4>
- 					<p>I'm pretty well known with software development using the .NET Framework, C# specifically.</p>
- 				</div>
- 				<div id="fadeDiv3" class="col-md-4">
- 					<i class="fa fa-rocket"></i>
- 					<h4>UI/UX</h4>
- 					<p>User interface & User Experience are both extremely important to me. I really like making my projects both good looking, and easy to use.</p>
- 				</div>		 				
-	 		</div>
+
+		 	<div class="col-md-12">
+		 		<div class="sitem col-md-2 col-lg-offset-1">
+			 		<center>
+				 		<div class="rib">
+				 			<i class="fa fa-code"></i>
+				 		</div>
+			 		</center>
+		 		</div>
+		 		<div class="fr sitem col-md-7 col-lg-offset-1">
+		 			<h2>Web</h2>
+		 			<p>I've been building sites for many years. I have loads of experience in both the front-end and back-end.</p>
+		 		</div>
+		 	</div>
+		 	<br>
+		 	<div class="mt col-md-12">
+		 		<div class="sitem col-md-7 col-lg-offset-1">
+		 			<h2>Full-Stack</h2>
+		 			<p>That means I can create both what you see, and what happends behind the scenes.</p>
+		 		</div>
+		 		<div class="sitem col-md-2 col-lg-offset-1">
+			 		<center>
+				 		<div class="rib">
+				 			<i class="fa fa-terminal"></i>
+				 		</div>
+			 		</center>
+		 		</div>
+		 	</div>
+		 	<br>
+		 	<div class="mt col-md-12">
+		 		<div class="sitem col-md-2 col-lg-offset-1">
+			 		<center>
+				 		<div class="rib">
+				 			<i class="fa fa-rocket"></i>
+				 		</div>
+			 		</center>
+		 		</div>
+		 		<div class="fr sitem col-md-7 col-lg-offset-1">
+		 			<h2>Accessibility</h2>
+		 			<p>My projects are created with a great mix of both a good look, and a good user experience.</p>
+		 		</div>
+		 	</div>
+
 	 	</div>
 	 </div>
 	 <hr>
 
-
+	<div id="gh">
+		<h3>Portfolio</h3>
+		<small>Click on a project to check it out.</small>
+	</div>
 	 <div id="portfoliowrap">
-        <h3>LATEST PROJECTS</h3>
+	     <div class="row">
 
-        <a target="_blank" href="http://spets1337.96.lt/TakeAScheme/">
-	        <div style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.6)), url('assets/img/tas.jpg') !important;" class="lwitem col-md-6">
-	        	<h2>TakeAScheme!</h2>
-	        	<h5><b>TakeAScheme is a tool that'll help you find a neat colour scheme for your next project.</b></h5>
+	        <div class="col-xs-12 col-md-2 col-lg-offset-2">
+	            <div class="pop">
+		            <a class="pitem" href="index.gli.html">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Greenline icons</h3>
+		                    <small id="fsl">Greenline Icons is a flat icon set, coloured mostly green and white.</small>
+		                </div>
+		                <div class="panel-image hide-panel-body">
+		                    <img src="assets/img/banner.png" class="panel-image-preview" />
+		                </div>
+		                <div class="ptags">
+		                	<span>#iconsset</span>
+		                	<span>#green</span>
+		                	<span>#flatdesign</span>
+		                </div>
+		            </a>
+		        </div>
 	        </div>
-        </a>
 
-        <a target="_blank" href="http://codepen.io/SPETS1337/post/require_vs_include">
-	        <div style="background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.8)), url('assets/img/code.jpg') !important;" class="lwitem col-md-3">
-	        	<h2><span id="hl">INCLUDE</span> vs <span id="hl">REQUIRE</span></h2>
-	        	<h5><b>In this blog I'll explain the difference between PHP functions include and require, and when to use which. With some help of (visual) examples, I try and give you the best explanation possible.</b></h5>
+	        <div class="col-xs-12 col-md-2">
+	            <div class="pop">
+		            <a class="pitem" target="_blank" href="http://spets1337.96.lt/TakeAScheme/">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">TakeAScheme!</h3>
+		                    <small id="fsl">TakeAScheme is a tool that'll help you find a neat colour scheme for your next project.</small>
+		                </div>
+		                <div class="panel-image hide-panel-body">
+		                    <img src="assets/img/tas.jpg" class="panel-image-preview" />
+		                </div>
+		                <div class="ptags">
+		                	<span>#design</span>
+		                	<span>#colourschemes</span>
+		                	<span>#website</span>
+		                </div>
+		            </a>
+		        </div>
 	        </div>
-        </a>
 
-        <a href="index.sf.html">
-	        <div style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('assets/img/sf.jpg') !important;" class="lwitem col-md-3">
-	        	<h2><i class="fa fa-windows fa-fw"></i> SmoothFader</h2>
-	        	<h5><b>SmoothFader is a lightweight application to easily fade the system volume in and out.<br><br>Notice: SmoothFader is still WIP and by no means completed.</b></h5>
+	        <div class="col-xs-12 col-md-2">
+	            <div class="pop">
+		            <a class="pitem" target="_blank" href="http://codepen.io/SPETS1337/post/require_vs_include">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">INCLUDE vs REQUIRE</h3>
+		                    <small id="fsl">In this blog I'll explain the difference between PHP functions include and require.</small>
+		                </div>
+		                <div class="panel-image hide-panel-body">
+		                    <img src="assets/img/code.jpg" class="panel-image-preview" />
+		                </div>
+		                <div class="ptags">
+		                	<span>#php</span>
+		                	<span>#blog</span>
+		                </div>
+		            </a>
+		        </div>
 	        </div>
-        </a>
 
-        
-		<a>
-	        <div class="blanc col-md-3">&nbsp;</div>
-        </a>
-
-        <a target="_blank" href="https://github.com/SPETS1337/CarParkSystem">
-	        <div style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url('assets/img/cps.png') !important;" class="lwitem col-md-6">
-	        	<h2>Car Park System</h2>
-	        	<h5><b>CarParkSystem (CPS) is a project I've recently started working on. It's still undergoing development.</b></h5>
+	        <div class="col-xs-12 col-md-2">
+	            <div class="pop">
+		            <a class="pitem" href="index.sf.html">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">SmoothFader</h3>
+		                    <small id="fsl">SmoothFader is a lightweight application to easily fade the system volume in and out.</small>
+		                </div>
+		                <div class="panel-image hide-panel-body">
+		                    <img src="assets/img/sf.jpg" class="panel-image-preview" />
+		                </div>
+		                <div class="ptags">
+		                	<span>#<i class="fa fa-windows fa-fw"></i> Windows</span>
+		                	<span>#software</span>
+		                	<span>#sound</span>
+		                </div>
+		            </a>
+		        </div>
 	        </div>
-        </a>
-
-        <a>
-	        <div class="blanc col-md-3">&nbsp;</div>
-        </a>
-        
+	     </div><center><p id="disc">Only a small proportion of my work/projects is listed above.</p></center>
      </div>
-	 
-	 <div style="margin-top:-17px;margin-bottom:-17px;">&nbsp;</div>
 
+     <div class="mobileViewFix"></div>
 
+	 <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 col-md-offset-2 footer-brand">
+            	<h2><a href="http://spets.me">spets.me</a></h2>
+                <br><p>© 2017 <a href="http://spets.me">SPETS.me</a>, All rights reserved</p>
+                <p><a target="_blank" href="https://github.com/SPETS1337/SPETS1337.github.io">Open source on &nbsp;<i class="fa fa-github-alt"></i> GitHub</a></p>
+            </div>
 
-	 <div id="footerwrap">
-	 	<div class="container">
-		 	<div class="row">
-		 		<div class="lowtext col-lg-4">
-		 			<p>&copy; SPETS1337 - Theme by <a href="http://blacktie.co/">BlackTie</a></p>
-		 			<p>This website is <a target="_blank" href="https://github.com/SPETS1337/SPETS1337.github.io">Open Source</a>!</p>
-		 		</div>
-		 		<div class="col-lg-4">
-		 			&nbsp;
-		 		</div>
-		 		<div class="col-lg-4">
-		 			<h4>Get in touch</h4>
-		 			<div class="hline-w"></div>
-		 			<p>
-		 				 <a target="_blank" id="whitelink" href="mailto:mail@spets.me"><i style="font-size:16px;" class="fa fa-envelope-o fa-fw"></i> MAIL@SPETS.ME</a> 
-		 				 <br>
-		 				 <a target="_blank" id="whitelink" href="https://www.twitter.com/SPETS1337"><i style="font-size:16px;" class="fa fa-twitter fa-fw"></i> @SPETS1337</a> 
-		 				 <br>
-		 				 <a target="_blank" id="whitelink" href="https://github.com/SPETS1337/"><i style="font-size:16px;" class="fa fa-github fa-fw"></i> @SPETS1337</a> 
-		 			</p>
-		 		</div>
-		 	
-		 	</div>
-	 	</div>
-	 </div>
+        	<div class="col-md-2 col-md-offset-3 footer-social">
+            	<h4>Get in touch</h4>
+            	<ul>
+                	<li><a target="_blank" href="https://github.com/SPETS1337/"> <i class="fa fa-github-alt fa-fw"></i> GitHub</a></li>
+                	<li><a target="_blank" href="https://twitter.com/SPETS1337/"> <i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+                	<li><a target="_blank" href="mailto:mail@spets.me"> <i class="fa fa-envelope fa-fw"></i> Mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
 
 	<script>
-	function fadeDivs() {
-    	$('#fadeDiv1').hide();
-    	$('#fadeDiv2').hide();
-    	$('#fadeDiv3').hide();
-
-		$('#fadeDiv1').delay(0).fadeIn(700);
-		$('#fadeDiv2').delay(500).fadeIn(500);
-		$('#fadeDiv3').delay(1000).fadeIn(500);
+	function fader() {
+    	$('.page').hide();
+		$('.page').fadeIn(650);
 	}
 	</script>
 
