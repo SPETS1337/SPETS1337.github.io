@@ -50,22 +50,16 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-track {
     width:0px;
     background-color:#F2F2F2;
-    border-left:1px solid #DEDEDE;
 }
  
 ::-webkit-scrollbar-thumb {
-    background-color:#909090;
-    border-left:1px solid #DEDEDE;
+    background-color:#4A4E58;
 }
 
 .mt{
 	margin-top:50px;
 	border-top:1px solid #EDEDED;
 	padding-top:50px;
-}
-
-.sitem{
-	padding-top:10px;
 }
 
 .sitem h2{
@@ -140,28 +134,33 @@ h1, h2, h3, h4, h5, h6 {
 	padding:9px 0px 9px 0px;
 }
 
-#bracket{
-	font-family: 'Lato', sans-serif;
-	color:#5CCFFF;
-	font-size: 75px;
-	position: relative;
-	padding:0 5px;
-	top:9px;
+.portfolioItem{
+	background-color:#fff;
+	height:308px;
 }
 
-#bracketText{
-	font-family: 'Lato', sans-serif;
-	font-size:32px;
-	letter-spacing:2px;
-	padding:0px 15px 15px 15px;
+.greenline{
+	background-image:url('../img/bg.jpg');
 }
 
-#dhl{
+.withSpacing{
+	margin-left:40px;
+}
+
+.dhl{
 	color:#fff;
 }
 
-#dhl:hover{
+.github:hover{
 	color:#1f1f1f;
+}
+
+.behance:hover{
+	color:#0B71FF;
+}
+
+.leftpadding{
+	padding-left:25px;
 }
 
 #sub{
@@ -171,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 #disc{
 	font-size:12px;
 	color:#a5a5a5;
-	margin-top:40px;
+	margin-top:120px;
 }
 
 @media all and (max-width: 1000px) {
@@ -261,12 +260,20 @@ a:focus {
 	background:#2B2E31;
 }
 
-.rib{
+/**.rib{
 	background-color:#00C9D3;
 	width:120px;
 	height:120px;
 	padding-top:15px;
 	border-radius:100%;
+}**/
+
+.rib{
+	width:120px;
+	height:120px;
+	padding-top:15px;
+	border-radius:100%;
+	border:2px solid #00C9D3;
 }
 
 .ptags{
@@ -276,30 +283,35 @@ a:focus {
 #fsl{
 	position:relative;
 	top:-15px;
+	font-size:13px;
 }
 
 .ptags span{
-	padding:3px 7px 3px 7px;
-	background-color:#00C9D3;
+	padding:8px 12px 8px 12px;
+	background-color:#DADADA;
 	border:1px solid #fff;
-	color:#fff;
-	font-size:12px;
+	color:##6F6F6F;
+	font-size:14px;
 }
 
 .panel-image img.panel-image-preview {
-    width: 100%;
-	border-radius: 4px 4px 0px 0px;
+    width:100%;
+    border:15px solid #fff;
+}
+
+.panel-title{
+	font-size:18px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing:0.4px;
 }
 
 .panel-heading ~ .panel-image img.panel-image-preview {
-	border-radius: 4px;
-	width:280px;
+	width:75%;
 	height:100%;
 	background-color:#fff !important;
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    box-shadow:0px 0px 20px #EBEBEB;
 }
 
 .panel-image ~ .panel-body, .panel-image.hide-panel-body ~ .panel-body {
@@ -496,7 +508,7 @@ a:focus {
 	margin-bottom: 60px;
 	display: block;
 	text-align: center;
-	height:420px;
+	height:827px;
 }
 
 #portfoliowrap h3 {
