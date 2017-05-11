@@ -43,6 +43,40 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.grid-item {
+ 	width: 25%;
+}
+.grid-item--width2 {
+	width: 50%;
+}
+
+.fixedbtn{
+	margin-left:35px !important;
+	margin-top:15px !important;
+}
+
+.button-group{
+	text-align:center;
+	margin-top:10px;
+}
+
+.button{
+	background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    color:#63738C;
+    border:1px solid #47556C;
+    font-size:13px;
+    padding:11px 15px 11px 15px;
+    transition:box-shadow 300ms;
+}
+
+.button:hover{
+	box-shadow:1px 1px #47556C;
+}
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;

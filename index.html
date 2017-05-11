@@ -73,7 +73,7 @@
 		 		<div class="fr sitem col-md-7 col-lg-offset-3">
 
 		 			<h2>Experienced</h2>
-		 			<p>I have multiple years of experience in both designing and programming. I'm familiar with programs like <b>Adobe Photoshop</b>, <b>XD</b> & <b>Illustrator</b>. I mainly use <b>HTML5</b>, <b>CSS3</b>, <b>PHP</b> and <b>Javascript</b> for websites. I am currently also learning <b>ReactJS</b>, <b>NodeJS</b> and <b>Laravel</b>.</p>
+		 			<p>I have multiple years of experience in both designing and programming. I'm familiar with programs like Adobe Photoshop, XD & Illustrator. I mainly use HTML5, CSS3, PHP and Javascript for websites.</p>
 
 		 		</div>
 
@@ -83,7 +83,7 @@
 		 		<div class="sitem col-md-7">
 
 		 			<h2>Full-Stack</h2>
-		 			<p>I'm a <b>full-stack</b> developer, meaning that I create both what you see when you visit a site, and what happends behind the scenes.</p>
+		 			<p>I'm a full-stack developer, meaning that I create both what you see when you visit a site, and what happends behind the scenes.</p>
 
 		 		</div>
 		 		<div class="sitem col-md-2 col-lg-offset-3">
@@ -114,7 +114,7 @@
 		 		<div class="fr sitem col-md-7 col-lg-offset-3">
 
 		 			<h2>Accessibility</h2>
-		 			<p>All of my projects have a great mix of being nice to look at (<b>UI</b>) and being easy to use (<b>UX</b>).</p>
+		 			<p>All of my projects have a great mix of being nice to look at (UI) and being easy to use (UX).</p>
 
 		 		</div>
 		 	</div>
@@ -126,13 +126,21 @@
 	<div id="gh">
 
 		<h3>Portfolio</h3>
-		<small>Click on a project to check it out.</small>
 
 	</div>
-	 <div id="portfoliowrap">
-	     <div class="row">
 
-	        <div class="portfolioItem col-xs-12 col-md-4">
+	<div id="filters" class="button-group">
+		<button class="button is-checked" data-filter="*">show all</button>
+		<button class="button fixedbtn" data-filter=".icons">icons</button>
+		<button class="button fixedbtn" data-filter=".blogs">blogs</button>
+		<button class="button fixedbtn" data-filter=".site">sites</button>
+		<button class="button fixedbtn" data-filter=".software">software</button>
+	</div>
+
+	<div id="portfoliowrap">
+	     <div class="grid row">
+
+	        <div class="element-item icons portfolioItem col-xs-12 col-md-4" data-category="icons">
 	            <div class="pop">
 		            <a class="pitem" href="index.gli.html">
 		                <div class="panel-heading">
@@ -155,7 +163,7 @@
 		        </div>
 	        </div>
 
-	        <div class="portfolioItem col-xs-12 col-md-4">
+	        <div class="element-item site portfolioItem col-xs-12 col-md-4" data-category="site">
 	            <div class="pop">
 		            <a class="pitem" target="_blank" href="http://spets1337.96.lt/TakeAScheme/">
 		                <div class="panel-heading">
@@ -178,7 +186,7 @@
 		        </div>
 	        </div>
 
-	        <div class="portfolioItem col-xs-12 col-md-4">
+	        <div class="element-item blogs portfolioItem col-xs-12 col-md-4" data-category="blogs">
 	            <div class="pop">
 		            <a class="pitem" target="_blank" href="http://codepen.io/SPETS1337/post/require_vs_include">
 		                <div class="panel-heading">
@@ -201,7 +209,7 @@
 		        </div>
 	        </div>
 
-	        <div class="portfolioItem col-xs-12 col-md-4 col-md-offset-4">
+	        <div class="element-item software portfolioItem col-xs-12 col-md-4 col-md-offset-4" data-category="software">
 	            <br><br><div class="pop">
 		            <a class="pitem" href="index.sf.html">
 		                <div class="panel-heading">
@@ -231,6 +239,7 @@
 
 	     </center>
      </div>
+
 
      <div class="mobileViewFix"></div>
 
@@ -270,14 +279,69 @@
     </footer>
     </div>
 
-	<script>
+	
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+
+    <script>
 		function fader() {
 	    	$('.page').hide().fadeIn(650);
 		}
 	</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+	<script>
+	var $grid = $('.grid').isotope({
+	  itemSelector: '.element-item',
+	  layoutMode: 'fitRows',
+	  getSortData: {
+	    name: '.name',
+	    symbol: '.symbol',
+	    number: '.number parseInt',
+	    category: '[data-category]'
+	  }
+	});
+
+	// filter functions
+	var filterFns = {
+	  // show if number is greater than 50
+	  numberGreaterThan50: function() {
+	    var number = $(this).find('.number').text();
+	    return parseInt( number, 10 ) > 50;
+	  },
+	  // show if name ends with -ium
+	  ium: function() {
+	    var name = $(this).find('.name').text();
+	    return name.match( /ium$/ );
+	  }
+	};
+
+	// bind filter button click
+	$('#filters').on( 'click', 'button', function() {
+	  var filterValue = $( this ).attr('data-filter');
+	  // use filterFn if matches value
+	  filterValue = filterFns[ filterValue ] || filterValue;
+	  $grid.isotope({ filter: filterValue });
+	});
+
+	// bind sort button click
+	$('#sorts').on( 'click', 'button', function() {
+	  var sortByValue = $(this).attr('data-sort-by');
+	  $grid.isotope({ sortBy: sortByValue });
+	});
+
+	// change is-checked class on buttons
+	$('.button-group').each( function( i, buttonGroup ) {
+	  var $buttonGroup = $( buttonGroup );
+	  $buttonGroup.on( 'click', 'button', function() {
+	    $buttonGroup.find('.is-checked').removeClass('is-checked');
+	    $( this ).addClass('is-checked');
+	  });
+	});
+	  
+
+	</script>
 
   </body>
 </html>
