@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
     transition:box-shadow 300ms;
 }
 
+.button:focus{
+	outline: none;
+}
+
 .button:hover{
 	box-shadow:1px 1px #47556C;
 }
@@ -167,9 +171,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #greentag{
-	background-color:#33BA2F;
+	background-color:#5BB664;
 	color:#fff;
-	padding:3px 6px 3px 6px;
+	font-size:12px;
+	padding:5px 10px 5px 10px;
 }
 
 .lowtext{
