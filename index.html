@@ -131,128 +131,109 @@
 
 	<div id="filters" class="button-group">
 		<button class="button is-checked" data-filter="*">show all</button>
-		<button class="button fixedbtn" data-filter=".icodes">icons & design</button>
+		<button class="button fixedbtn" data-filter=".icodes">icons <span id="ampersand">&amp;</span> design</button>
 		<button class="button fixedbtn" data-filter=".blogs">blogs</button>
-		<button class="button fixedbtn" data-filter=".site">sites</button>
+		<button class="button fixedbtn" data-filter=".sitetemp">sites <span id="ampersand">&amp;</span> templates</button>
 		<button class="button fixedbtn" data-filter=".software">software</button>
 	</div>
 
 	<div id="portfoliowrap">
 	     <div class="grid row">
 
-	        <div class="element-item icodes portfolioItem col-xs-12 col-md-4" data-category="icodes">
-	            <div class="pop">
-		            <a class="pitem" href="index.gli.html">
-		                <div class="panel-heading">
+	        
 
-		                    <h3 class="panel-title">Greenline icons <small>v1</small></h3>
-		                    <small id="fsl">Greenline Icons is a flat icon set, coloured mostly green and white.</small>
+			<div style="background-image:url('assets/img/banner.png');border-right:4px solid #fff;" class="element-item icodes portfolioItem col-md-4" data-category="icodes">
+				<a href="index.gli.html">
+					<div class="innerPortItem">
 
-		                </div>
-		                <div class="panel-image hide-panel-body">
+						<h2>Greenline icons <small>v1</small></h2>
+						<h4>Greenline Icons is a flat icon set, coloured mostly green and white.</h4>
+						<small><br>Click for more information..</small>
 
-		                    <img src="assets/img/banner.png" alt="Greenline icons" class="panel-image-preview" />
+					</div>
+				</a>
+			</div>
 
-		                </div>
-		            </a>
-		        </div>
-	        </div>
+			<div style="background-image:url('assets/img/tas.jpg');" class="element-item sitetemp portfolioItem col-md-2" data-category="sitetemp">
+				<a target="_blank" href="http://spets1337.96.lt/TakeAScheme/">
+					<div class="innerPortItem col-md-12">
 
-	        <div class="element-item site portfolioItem col-xs-12 col-md-4" data-category="site">
-	            <div class="pop">
-		            <a class="pitem" target="_blank" href="http://spets1337.96.lt/TakeAScheme/">
-		                <div class="panel-heading">
+						<h3>TakeAScheme!</h3>
+						<h6>TakeAScheme is a tool that'll help you find a neat colour scheme for your next project.</h6>
+						<small><br>Click to go to the site..</small>
 
-		                    <h3 class="panel-title">TakeAScheme!</h3>
-		                    <small id="fsl">TakeAScheme is a tool that'll help you find a neat colour scheme for your next project.</small>
-		                
-		                </div>
-		                <div class="panel-image hide-panel-body">
+					</div>
+				</a>
+			</div>
 
-		                    <img src="assets/img/tas.jpg" alt="TakeAScheme" class="panel-image-preview" />
-		                
-		                </div>
-		            </a>
-		        </div>
-	        </div>
+			<div style="background-image:url('assets/img/code.jpg');" class="element-item blogs portfolioItem col-md-4" data-category="blogs">
+				<a target="_blank" href="http://codepen.io/SPETS1337/post/require_vs_include">
+					<div class="innerPortItem col-md-12">
 
-	        <div class="element-item blogs portfolioItem col-xs-12 col-md-4" data-category="blogs">
-	            <div class="pop">
-		            <a class="pitem" target="_blank" href="http://codepen.io/SPETS1337/post/require_vs_include">
-		                <div class="panel-heading">
-		                    
-		                    <h3 class="panel-title">INCLUDE vs REQUIRE</h3>
-		                    <small id="fsl">In this blog I'll explain the difference between PHP functions include and require.</small>
-		                
-		                </div>
-		                <div class="panel-image hide-panel-body">
-		                    
-		                    <img src="assets/img/code.jpg" alt="INCLUDE vs REQUIRE" class="panel-image-preview" />
-		               
-		                </div>
-		            </a>
-		        </div>
-	        </div>
+						<h2>INCLUDE vs REQUIRE</h2>
+						<h4>In this blog I'll explain the difference between PHP functions include and require.</h4>
+						<small><br>Click to go to the blog..</small>
 
-	        <div class="element-item software portfolioItem col-xs-12 col-md-4" data-category="software">
-	            <div class="pop">
-		            <a class="pitem" href="index.sf.html">
-		                <div class="panel-heading">
-		                    
-		                    <h3 class="panel-title">SmoothFader <small>v1.19 &mdash; <i title="Windows application" class="fa fa-windows fa-fw"></i></small></h3>
-		                    <small id="fsl">SmoothFader is a free and light-weight application to easily fade the <br>system volume in and out.</small>
-		                
-		                </div>
-		                <div class="panel-image hide-panel-body">
-		                    
-		                    <img src="assets/img/sf.jpg" alt="SmoothFader" class="panel-image-preview" />
-		                
-		                </div>
-		            </a>
-		        </div>
-	        </div>
+					</div>
+				</a>
+			</div>
 
-	        <div class="element-item software portfolioItem col-xs-12 col-md-4" data-category="software">
-	            <div class="pop">
-		            <a class="pitem" href="index.rectest.html">
-		                <div class="panel-heading">
-		                    
-		                    <h3 class="panel-title">RECTest <small>v1.1 &mdash; <i title="Windows application" class="fa fa-windows fa-fw"></i></small></h3>
-		                    <small id="fsl">RECTest™ is an app that allows you to both test and train your reactive powers.</small>
-		                
-		                </div>
-		                <div class="panel-image hide-panel-body">
-		                    
-		                    <img src="assets/img/rectest.png" alt="RECTest" class="panel-image-preview" />
-		                
-		                </div>
-		            </a>
-		        </div>
-	        </div>
+			<div style="background-image:url('assets/img/rectest.png');" class="element-item software portfolioItem col-md-2" data-category="software">
+				<a href="index.rectest.html">
+					<div class="innerPortItem">
 
-	        <div class="element-item icodes portfolioItem col-xs-12 col-md-4" data-category="icodes">
-	            <div class="pop">
-		            <a class="pitem" href="index.cs.html">
-		                <div class="panel-heading">
-		                    
-		                    <h3 class="panel-title">ColourScheme Pack <small>v1.1</small></h3>
-		                    <small id="fsl">A small collection of some of my favourite colour schemes. Many more will be added in the near future.</small>
-		                
-		                </div>
-		                <div class="panel-image hide-panel-body">
-		                    
-		                    <img src="assets/img/cs.png" alt="ColourScheme Pack" class="panel-image-preview" />
-		                
-		                </div>
-		            </a>
-		        </div>
-	        </div>
+						<h3>RECTest <small>v1.1 &mdash; <i title="Windows application" class="fa fa-windows fa-fw"></i></small></h3>
+						<h6>RECTest™ is an app that allows you to both test and train your reactive powers.</h6>
+						<small><br>Click for more information..</small>
+
+					</div>
+				</a>
+			</div>
+
+			<!-- Second row -->
+
+			<div style="background-image:url('assets/img/cs.png');" class="element-item icodes portfolioItem col-md-2" data-category="icodes">
+				<a href="index.cs.html">
+					<div class="innerPortItem">
+
+						<h3>ColourScheme Pack <small>v1.1</small></h3>
+						<h6>A small collection of some of my favourite colour schemes. Many more will be added in the near future.</h6>
+						<small><br>Click for more information..</small>
+
+					</div>
+				</a>
+			</div>
+
+			<div style="background-image:url('assets/img/sf.jpg');" class="element-item software portfolioItem col-md-4" data-category="software">
+				<a href="index.sf.html">
+					<div class="innerPortItem">
+
+						<h2>SmoothFader <small>v1.19 &mdash; <i title="Windows application" class="fa fa-windows fa-fw"></i></small></h2>
+						<h4>SmoothFader is a free and light-weight application to easily fade the <br>system volume in and out.</h4>
+						<small><br>Click for more information..</small>
+
+					</div>
+				</a>
+			</div>
+
+			<div style="background-image:url('assets/img/sap.png');" class="element-item sitetemp portfolioItem col-md-4" data-category="sitetemp">
+				<a target="_blank" href="https://github.com/SPETS1337/Single-Auth-Page">
+					<div class="innerPortItem">
+
+						<h2>Single Auth Page</h2>
+						<h4>Single Auth Page is an one-page sign in & registration page.</h4>
+						<small><br>Click to go to the GitHub page..</small>
+
+					</div>
+				</a>
+			</div>
+
 
 
 	     </div>
 
 	     <center>
-
+				
 	    	 <p id="disc">Only a proportion of my work is listed above.</p>
 
 	     </center>

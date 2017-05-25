@@ -16,12 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-.brand_logo{
-    width: 900px;
-    height: 550px;
-    transition: 0.3s ease;
-}
-
 @media only screen and (max-width : 1200px) {
     .brand_logo{
         width: 750px;
@@ -43,11 +37,36 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.grid-item {
- 	width: 25%;
+.main {
+  margin: 0 auto -60px;
 }
-.grid-item--width2 {
-	width: 50%;
+.main .img-responsive {
+  margin-bottom: 30px;
+}
+
+.innerPortItem{
+	width:100%;
+	height:100%;
+	padding:20px;
+	transition:background-color 450ms;
+	opacity:0;
+	color:rgba(1,2,3,0);
+}
+
+.innerPortItem:hover{
+	color:#384452;
+	opacity:1;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.innerPortItem small{
+	color:#616F7F;
+}
+
+.brand_logo{
+    width: 900px;
+    height: 550px;
+    transition: 0.3s ease;
 }
 
 .fixedbtn{
@@ -186,6 +205,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align:right;
 }
 
+#ampersand{
+	color:#C1CCDD;
+}
+
 #ngb:hover{
 	color:#fff;
 	text-decoration:underline;
@@ -198,11 +221,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolioItem{
 	background-color:#fff;
-	height:308px;
-}
-
-.greenline{
-	background-image:url('../img/bg.jpg');
+	height:220px !important;
+	margin:0px;
+	border-right:3px solid #fff;
+	border-bottom:3px solid #fff;
+	padding:0px;
+	background-position: center; 
 }
 
 .withSpacing{
@@ -233,8 +257,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #disc{
 	font-size:12px;
+	margin-top:30px;
 	color:#a5a5a5;
-	margin-top:120px;
 }
 
 @media all and (max-width: 1000px) {
@@ -572,7 +596,7 @@ a:focus {
 	margin-bottom: 60px;
 	display: block;
 	text-align: center;
-	height:827px;
+	height:560px;
 }
 
 #portfoliowrap h3 {
