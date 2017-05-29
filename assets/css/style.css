@@ -217,6 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 .dlbtn{
 	width:100%;
 	padding:9px 0px 9px 0px;
+	border-radius:0px;
 }
 
 .portfolioItem{
@@ -773,7 +774,7 @@ a:focus {
 }
 
 #blue {
-	background: #00C9D3;
+	background: #383C45;
 	margin-bottom: 60px;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -788,15 +789,6 @@ a:focus {
 	color: #00b3fe;
 	font-weight: 700;
 	margin-bottom: 15px;
-}
-
-csmall {
-	font-size: 12px;
-	color: #b3b3b3;
-}
-csmall2 {
-	font-size: 12px;
-	color: #f39c12
 }
 
 .spacing {
