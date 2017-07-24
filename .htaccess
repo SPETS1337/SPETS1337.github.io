@@ -1,0 +1,13 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 10 minutes"
+ExpiresByType image/jpeg "access plus 10 minutes"
+ExpiresByType image/png "access plus 10 minutes"
+ExpiresByType text/css "access plus 10 minutes"
+ExpiresByType text/html "access plus 10 minutes"
+ExpiresByType text/x-javascript "access plus 10 minutes"
+ExpiresByType image/x-icon "access plus 10 minutes"
+ExpiresDefault "access plus 10 minutes"
+</IfModule>
+## EXPIRES CACHING ##
