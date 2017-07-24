@@ -549,6 +549,14 @@ a:focus {
 
 #headerwrap {
 	background-color: #00b3fe;
+	min-height: 350px;
+	padding-top: 68px;
+	padding-bottom: 0px;
+	text-align: center;
+	box-shadow:0px 0px 30px #f5f5f5;
+}
+
+.bgimg{
 	background-image:url('../img/bg.jpg');
 
 	/* Parallax effect */
@@ -557,12 +565,6 @@ a:focus {
     background-repeat: no-repeat;
     background-size: cover;
     /*******************/
-
-	min-height: 350px;
-	padding-top: 68px;
-	padding-bottom: 0px;
-	text-align: center;
-	box-shadow:0px 0px 30px #f5f5f5;
 }
 
 #headerwrap h3, h5 {
