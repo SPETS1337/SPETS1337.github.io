@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+  background: #E8E8E8;
+  padding-top: 65px;
+  font-family: 'Raleway', sans-serif; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+h1 {
+  font-weight: bold; }
+
+a {
+  font-weight: bold;
+  color: #1f1f1f; }
+
+/*# sourceMappingURL=style.css.map */

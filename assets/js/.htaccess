@@ -1,1 +1,6 @@
 Options -Indexes
+ErrorDocument 400 http://spets.me/whoops/400.html
+ErrorDocument 401 http://spets.me/whoops/401.html
+ErrorDocument 403 http://spets.me/whoops/403.html
+ErrorDocument 404 http://spets.me/whoops/404.html
+ErrorDocument 500 http://spets.me/whoops/500.html

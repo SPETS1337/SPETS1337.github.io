@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import 'variables';
 
 body { 
-	background: #ffffff; 
+	background: $bg_color; 
 	margin: 0; 
 	height: 100%; 
 	color: #384452;
@@ -114,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pace .pace-progress {
-  background: #00C9D3;
+  background: $main;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -350,7 +351,7 @@ a:focus {
 }
 
 /**.rib{
-	background-color:#00C9D3;
+	background-color:$main;
 	width:120px;
 	height:120px;
 	padding-top:15px;
@@ -362,7 +363,7 @@ a:focus {
 	height:120px;
 	padding-top:15px;
 	border-radius:100%;
-	border:2px solid #00C9D3;
+	border:2px solid $main;
 }
 
 .ptags{
@@ -379,7 +380,7 @@ a:focus {
 	padding:8px 12px 8px 12px;
 	background-color:#DADADA;
 	border:1px solid #fff;
-	color:##6F6F6F;
+	color:#6F6F6F;
 	font-size:14px;
 }
 
@@ -557,7 +558,12 @@ a:focus {
 }
 
 .bgimg{
-	background-image:url('../img/bg.jpg');
+	/*background-image:url('../img/bg.jpg');*/
+
+	background: $grad_one;
+	background: -moz-linear-gradient(-45deg, $grad_one, $grad_two);
+	background: -webkit-linear-gradient(-45deg, $grad_one, $grad_two);
+	background: linear-gradient(135deg, $grad_one, $grad_two);
 
 	/* Parallax effect */
 	background-attachment: fixed;
