@@ -549,7 +549,7 @@ a:focus {
 }
 
 #headerwrap {
-	background-color: #00b3fe;
+	background-color: #A19DD9;
 	min-height: 350px;
 	padding-top: 68px;
 	padding-bottom: 0px;
@@ -558,8 +558,6 @@ a:focus {
 }
 
 .bgimg{
-	/*background-image:url('../img/bg.jpg');*/
-
 	background: $grad_one;
 	background: -moz-linear-gradient(-45deg, $grad_one, $grad_two);
 	background: -webkit-linear-gradient(-45deg, $grad_one, $grad_two);
