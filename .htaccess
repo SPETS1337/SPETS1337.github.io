@@ -1,5 +1,19 @@
-ErrorDocument 400 http://spets.me/whoops/400.html
-ErrorDocument 401 http://spets.me/whoops/401.html
-ErrorDocument 403 http://spets.me/whoops/403.html
-ErrorDocument 404 http://spets.me/whoops/404.html
-ErrorDocument 500 http://spets.me/whoops/500.html
+## EXPIRES CACHING ##
+AddType assets/img/icon.ico
+
+<IfModule mod_headers.c>
+# YEAR
+<FilesMatch ".(ico|gif|jpg|jpeg|png|flv|pdf)$">
+Header set Cache-Control "max-age=29030400"
+</FilesMatch>
+# WEEK
+<FilesMatch ".(js|css|swf)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+# 24 HOURS
+<FilesMatch ".(html|htm|txt|php)$">
+Header set Cache-Control "max-age=86400"
+</FilesMatch>
+</IfModule>
+
+EXPIRES CACHING ##
